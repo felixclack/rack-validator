@@ -1,0 +1,10 @@
+Gemfile
+Gemfile.lock
+Rakefile
+lib/rack/tidy_response.rb
+lib/rack/validator.rb
+readme.md
+test/rack_validator_test.rb
+test/test_helper.rb
+test/tidy_response_test.rb
+Manifest

@@ -1,0 +1,17 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    mhennemeyer-matchy (0.3.3)
+    rack (1.2.1)
+    shoulda (2.11.3)
+    tidy (1.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler
+  mhennemeyer-matchy
+  rack
+  shoulda
+  tidy
