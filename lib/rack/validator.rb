@@ -1,4 +1,4 @@
-require 'lib/rack/tidy_response'
+require File.expand_path('./', 'lib/rack/tidy_response')
 
 module Rack
   class Validator
@@ -10,7 +10,7 @@ module Rack
     def call(env)
       status, headers, response = @app.call(env)
 
-      @response = response.respond_to?(:body) ? ::TidyResponse.new(response.body).to_s : response
+      @response = response.respond_to?(:body) ? Rack::TidyResponse.new(response.body).to_s : response
       [status, headers, @response]
     end
   end

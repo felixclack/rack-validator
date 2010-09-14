@@ -13,8 +13,8 @@ class RackValidatorTest < Test::Unit::TestCase
   context "Rack::Validator" do
     context "with html" do
       should "pass it to TidyResponse" do
-        ::TidyResponse.expects(:new)
-        ::TidyResponse.any_instance.expects(:to_s)
+        Rack::TidyResponse.expects(:new)
+        Rack::TidyResponse.any_instance.expects(:to_s)
         @response = get_response(invalid_html)
       end
     end
