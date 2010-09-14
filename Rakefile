@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('rack-validator', '0.1') do |p|
+Echoe.new('rack-valid-html', '0.1') do |p|
   p.description    = "A Rack app that runs Tidy on your html and prepends any errors to the response"
   p.url            = "http://github.com/kid80/rack-validator"
   p.author         = "Felix Clack"
