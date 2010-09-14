@@ -1,4 +1,4 @@
-require File.expand_path('./', 'lib/rack/tidy_response')
+require File.dirname(__FILE__) + '/tidy_response'
 
 module Rack
   class Validator
